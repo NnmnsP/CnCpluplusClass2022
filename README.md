@@ -8,4 +8,4 @@ Module 6
 
 2022
 
-![This is a cat image](/images/cat-code.jpeg)
+![This is a cat image](/cat-code.jpeg)
