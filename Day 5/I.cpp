@@ -28,17 +28,13 @@ int main() {
         min_index = temp;
     }
 
-    int loop = (max_index - min_index)/2;
-    if (loop == 0) {
-        loop++;
+    for (int i = 0; i < min_index; i++) {
+        cout << a[i] << " ";
     }
-    for (int i = 0; i < loop; i++) {
-        temp = a[min_index + i];
-        a[min_index + i] = a[max_index - i];
-        a[max_index - i] = temp;
+    for (int i = max_index; i >= min_index; i--) {
+        cout << a[i] << " ";
     }
-
-    for (int e: a) {
-        cout << e << " ";
+    for (int i = max_index+1; i < n; i++) {
+        cout << a[i] << " ";
     }
 }
